@@ -1,3 +1,7 @@
+/* P1.c */
+/* Eduardo Carvalho Nascimento de Oliveira */
+/* 11811EEL017 */
+
 #include <stdio.h>
 
 int main()
