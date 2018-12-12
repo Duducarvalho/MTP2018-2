@@ -25,7 +25,7 @@ Ponto * gerarpontos(int n) {
 
 void mostrarcoord(Ponto * p_ini, Ponto * p_fim) {
     if(p_ini < p_fim) {
-        printf("X: %.3lf, Y: %.3lf\n", p_ini->x, p_ini->y);
+        printf("(%.3lf, %.3lf) ", p_ini->x, p_ini->y);
         mostrarcoord(p_ini+1, p_fim);
     }
 }
