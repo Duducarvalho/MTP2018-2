@@ -1,4 +1,4 @@
-/* P6.c */
+/* P7.c */
 /* Eduardo Carvalho Nascimento de Oliveira */
 /* 11811EEL017 */
 
@@ -77,7 +77,7 @@ int main()
     }
     else
     {
-        printf("Digite o número de pontos: ");
+        printf("Digite o nÃºmero de pontos: ");
         scanf("%u", &n);
         getchar();
         coord = gerarcoord(n);
