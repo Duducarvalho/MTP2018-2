@@ -37,7 +37,7 @@ int main()
     printf("Digite o numero de pontos desejados: ");
     scanf("%d", &n);
     getchar();
-    coord = gerarpontos(n);
+    coord = gerarcoord(n);
     mostrarcoord(coord, coord + n);
     free(coord);
     return 0;
