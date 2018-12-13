@@ -65,10 +65,10 @@ Ponto * lercoord(char * nome_arquivo, unsigned int *pn)
 
 int main()
 {
-    unsigned int n, opcao;
+    int n, opcao;
     Ponto * coord;
     printf("Digite 1 para gravar um arquivo; Digite 2 para ler arquivo: ");
-    scanf("%u", &opcao);
+    scanf("%d", &opcao);
     getchar();
     if(opcao==2)
     {
@@ -78,7 +78,7 @@ int main()
     else
     {
         printf("Digite o numero de pontos: ");
-        scanf("%u", &n);
+        scanf("%d", &n);
         getchar();
         coord = gerarcoord(n);
         gravacoord(coord, n);
