@@ -12,7 +12,7 @@ typedef struct Ponto{
 }Ponto;
 
 
-Ponto * gerarpontos(int n) {
+Ponto * gerarcoord(int n) {
     int i;
     Ponto * coord = (Ponto *) calloc(n,sizeof(Ponto));
     for(i=0;i<n;i++)
