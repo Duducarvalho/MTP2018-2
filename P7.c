@@ -37,7 +37,7 @@ void mostrarcoord(Ponto * p_ini, Ponto * p_fim)
 void gravacoord(Ponto * p_ini, int n)
 {
     FILE * arquivo;
-    arquivo = fopen ("coordenadas.dat", "wb");
+    arquivo = fopen ("coord.dat", "wb");
     fwrite(p_ini, n, sizeof(Ponto), arquivo);
     fclose(arquivo);
 }
@@ -72,12 +72,12 @@ int main()
     getchar();
     if(opcao==2)
     {
-        coord = lercoord("pontos.dat", &n);
+        coord = lercoord("coord.dat", &n);
         mostrarcoord(coord, coord + n);
     }
     else
     {
-        printf("Digite o número de pontos: ");
+        printf("Digite o numero de pontos: ");
         scanf("%u", &n);
         getchar();
         coord = gerarcoord(n);
